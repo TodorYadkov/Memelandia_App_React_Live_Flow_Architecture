@@ -10,4 +10,4 @@ Explore the live flow of the Memelandia App architecture by visiting the [Live F
 
 ## How to Use
 
- **Hover:** Hover over nodes to highlight dependencies.
+Hover over nodes to highlight dependencies.
