@@ -1,0 +1,57 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.top-rated-memes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-rated-memes>h2 {
+    cursor: default;
+    font-size: 3.8em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--color-text);
+    text-shadow:
+        1px 1px 6px var(--color-white),
+        1px 1px 6px var(--color-white),
+        1px 1px 6px var(--color-white),
+        1px 1px 6px var(--color-white);
+    padding: 0.25em;
+    border-radius: 0.5em;
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 4px 4px 12px 1px rgb(255, 255, 255, 0.5), 14px 14px 16px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 1em;
+    transition: all 1s ease-in-out;
+}
+
+.top-rated-memes>h2 span:nth-child(1) {
+    color: var(--color-blue);
+}
+
+.top-rated-memes>h2 span:nth-child(2) {
+    color: var(--color-pink);
+}
+
+.top-rated-memes>h2 span:nth-child(3) {
+    display: block;
+    font-size: 0.7em;
+}
+
+.top-rated-memes>h2:hover {
+    color: var(--color-white);
+    text-shadow:
+        1px -1px var(--color-text),
+        2px -2px var(--color-text),
+        3px -3px var(--color-text),
+        4px -4px var(--color-text),
+        5px -5px var(--color-text),
+        6px -6px var(--color-text),
+        7px -7px var(--color-text),
+        8px -8px var(--color-text);
+}

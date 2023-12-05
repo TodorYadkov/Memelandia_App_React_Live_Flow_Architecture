@@ -1,0 +1,115 @@
+/* Hide the main navigation by default */
+.main-nav {
+    display: none;
+}
+
+.main-nav ul {
+    padding: 0;
+}
+
+.main-nav li {
+    display: block;
+}
+
+.main-nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 0.5em 1em;
+}
+
+.main-nav .active {
+    color: var(--color-primary);
+}
+
+.main-nav li,
+.main-nav li a {
+    transition: transform 0.3s ease-in;
+}
+
+.main-nav li:hover,
+.main-nav li a:hover {
+    color: var(--color-hover);
+    transform: scale(1.1);
+}
+
+/* Hide checkbox - used for toggling the navigation */
+.nav-toggle {
+    /* Remove checkbox */
+    appearance: none;
+    pointer-events: none;
+}
+
+/* For large screen */
+@media (min-width: 601px) {
+
+    .label {
+        display: none;
+    }
+
+    .main-nav {
+        display: block;
+    }
+
+    .main-nav ul {
+        display: flex;
+    }
+}
+
+/* For small screen */
+@media (max-width: 600px) {
+
+    .label {
+        color: var(--color-white);
+        font-size: 2.5em;
+    }
+
+    .main-nav .active {
+        color: var(--color-text);
+    }
+
+    .main-nav li:hover,
+    .main-nav li a:hover {
+        color: var(--color-text);
+        transform: scale(1.03);
+    }
+
+    /* Hide close */
+    .label .nav-toggle-close {
+        display: none;
+    }
+
+    /* Position and style the navigation when the checkbox is checked */
+    .nav-toggle:checked+.main-nav {
+        display: block;
+        position: absolute;
+        top: 8.5em;
+        right: 0;
+        background: var(--color-text);
+        padding: 1em 1.5em;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.4);
+        z-index: 900;
+    }
+
+    .nav-toggle:checked+.main-nav li+li {
+        margin-top: 0.5em;
+    }
+
+    /* Style the navigation links when the checkbox is checked */
+    .nav-toggle:checked+.main-nav a {
+        background: var(--color-primary);
+        border-radius: 0.3em;
+    }
+
+    /* Show close */
+    .nav-toggle:checked+.main-nav+.label .nav-toggle-close {
+        display: inline;
+    }
+
+    /* Hide open */
+    .nav-toggle:checked+.main-nav+.label .nav-toggle-open {
+        display: none;
+    }
+}

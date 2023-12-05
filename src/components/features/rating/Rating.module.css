@@ -1,0 +1,26 @@
+.rating-star {
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    font-size: 1.5em;
+    color: var(--color-white);
+    margin: -0.15em;
+}
+
+.rating-star::before {
+    /* Star character */
+    content: "\2605";
+}
+
+.rating-star.active {
+    /* Yellow star color for active stars */
+    color: var(--color-star);
+}
+
+.rating span {
+    transition: transform 0.6s ease-in-out;
+}
+
+.rating span:hover {
+    transform: scale(1.6);
+}
