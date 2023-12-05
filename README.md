@@ -7,8 +7,22 @@ The Memelandia App is a React-based platform that empowers users to create, shar
 
 ## Live Flow Visualization
 
-Explore the live flow of the Memelandia App architecture by visiting the [Live Flow Page](#) [Replace with the actual link once it's available].
+Explore the live flow of the Memelandia App architecture by visiting the [Live Flow Page](https://todoryadkov.github.io/Memelandia_App_React_Live_Flow_Architecture/)
 
 ## How to Use
 
-Hover over nodes to highlight dependencies.
+- **Hover:** Hover over nodes to highlight dependencies.
+- **Right-Click:** Right-click to pin the highlight for closer inspection.
+- **ESC:** Press the ESC key to clear highlights.
+
+## Repository Structure
+
+- `src/`: Contains the source code for the live flow visualization.
+
+## Feedback and Contributions
+
+If you have feedback or suggestions, feel free to open an issue. Contributions are welcome!
+
+## License
+
+This project is licensed under the MIT License.
